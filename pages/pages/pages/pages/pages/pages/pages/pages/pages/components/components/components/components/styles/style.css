@@ -1,1 +1,65 @@
+/* Fond sombre et texte blanc */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+}
 
+/* Header violet */
+.header {
+  background-color: #1f1f1f;
+  color: #9b5de5;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Boutons violets */
+button {
+  background-color: #9b5de5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7a3fcf;
+}
+
+/* Menu fixe */
+.fixed-menu {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 400px;
+  background-color: #1f1f1f;
+  border-radius: 30px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+  padding: 12px;
+  z-index: 50;
+}
+
+/* Formulaire centré (connexion) */
+.center-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* moins header/menu */
+}
+
+/* Formulaire plein écran */
+.fullscreen-form {
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
